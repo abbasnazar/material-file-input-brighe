@@ -7,17 +7,28 @@
 </svg>
 
 <mat-card>
-  <mat-card-title>Fieldset and file input</mat-card-title>
-  <mat-card-subtitle>Material designed fieldset and file input</mat-card-subtitle>
+  <mat-card-title>Apply for jobs</mat-card-title>
+  <mat-card-subtitle>Find the right job or internship for you</mat-card-subtitle>
 
   <mat-card-content>
     <form id="person" (change)="handleChange($event)">
       <div class="form__container">
         <mat-form-field class="form__input" appearance="outline" color="primary" floatLabel="always">
           <mat-label>Name</mat-label>
-          <input matInput placeholder="Clark Kent">
-          <mat-hint>Please no numbers!</mat-hint>
+          <input matInput placeholder="Full-Name">
         </mat-form-field>
+        <mat-form-field class="form__input" appearance="outline" color="primary" floatLabel="always">
+        <mat-label>E-mail</mat-label>
+        <input matInput placeholder="E-mail">
+      </mat-form-field>
+      <mat-form-field class="form__input" appearance="outline" color="primary" floatLabel="always">
+      <mat-label>Phone-number</mat-label>
+      <input matInput placeholder="Phone-number">
+    </mat-form-field>
+    <mat-form-field class="form__input" appearance="outline" color="primary" floatLabel="always">
+    <mat-label>Desired-job</mat-label>
+    <input matInput placeholder="Desired-job">
+  </mat-form-field>
       </div>
 
       <app-fieldset
